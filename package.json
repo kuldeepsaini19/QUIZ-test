@@ -1,0 +1,14 @@
+{
+  "name": "3rd-grade-test-series",
+  "version": "1.0.0",
+  "description": "3rd Grade Quiz Dashboard with multiple tests",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
