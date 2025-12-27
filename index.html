@@ -3,62 +3,117 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Test Series Dashboard</title>
+<title>3rd Grade Test Series Dashboard</title>
 
 <style>
+:root{
+  --p1:#6f00ff;
+  --p2:#9c27b0;
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --text:#111;
+}
 body{
-  font-family: Arial, sans-serif;
-  background:#f6f8fb;
   margin:0;
-  padding:0;
+  font-family: Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
 }
 .container{
-  max-width:600px;
+  max-width:650px;
   margin:auto;
   padding:20px;
   text-align:center;
 }
-h1{
+.header{
+  background:var(--card);
+  padding:16px;
+  border-radius:12px;
+  box-shadow:0 3px 10px rgba(0,0,0,.1);
   margin-bottom:20px;
 }
+.brand{
+  display:inline-block;
+  padding:8px 14px;
+  border-radius:10px;
+  background:linear-gradient(90deg,var(--p1),var(--p2));
+  color:#fff;
+  font-weight:bold;
+  text-decoration:none;
+}
+h1{
+  margin:15px 0 5px;
+  font-size:22px;
+}
+p{
+  margin:0;
+  color:#555;
+  font-size:14px;
+}
+
 .quiz-btn{
   display:block;
   margin:15px 0;
-  padding:16px;
+  padding:18px;
   font-size:18px;
   font-weight:bold;
   text-decoration:none;
   color:white;
-  border-radius:10px;
-  background:linear-gradient(90deg,#6f00ff,#9c27b0);
+  border-radius:12px;
+  background:linear-gradient(90deg,var(--p1),var(--p2));
+  box-shadow:0 4px 14px rgba(0,0,0,.15);
 }
 .quiz-btn:active{
   transform:scale(0.97);
 }
-.telegram{
+
+.footer{
   margin-top:30px;
+}
+.telegram{
   display:inline-block;
-  text-decoration:none;
   padding:10px 16px;
   border-radius:8px;
   background:#229ED9;
   color:white;
+  text-decoration:none;
   font-weight:bold;
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
-  <h1>📘 Grade-3 Test Series</h1>
 
-  <a href="3rd Grade sst.html" class="quiz-btn">📝 Quiz 1</a>
-  <a href="3rd Grade sci & maths.html" class="quiz-btn">📝 Quiz 2</a>
-  <a href="3rd Grade L1.html" class="quiz-btn">📝 Quiz 3</a>
+  <div class="header">
+    <a href="https://t.me/RPSC_RSMSSB_BOARD" target="_blank" class="brand">
+      📢 JOIN TELEGRAM
+    </a>
+    <h1>3rd Grade Test Series</h1>
+    <p>अपनी परीक्षा चुनें</p>
+  </div>
 
-  <a href="https://t.me/RPSC_RSMSSB_BOARD" target="_blank" class="telegram">
-    📢 Join Telegram
+  <!-- QUIZ LINKS -->
+  <a href="3rd-grade-l1.html" class="quiz-btn">
+    📝 3rd Grade L1
   </a>
+
+  <a href="3rd-grade-sci-maths.html" class="quiz-btn">
+    🧪 3rd Grade Science & Maths
+  </a>
+
+  <a href="3rd-grade-sst.html" class="quiz-btn">
+    🌍 3rd Grade SST
+  </a>
+
+  <div class="footer">
+    <a href="https://t.me/RPSC_RSMSSB_BOARD" target="_blank" class="telegram">
+      👉 Join Telegram Channel
+    </a>
+  </div>
+
 </div>
+
 </body>
 </html>
